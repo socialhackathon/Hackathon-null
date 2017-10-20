@@ -25,6 +25,7 @@
     "path": "^0.12.7",
     "randomstring": "^1.1.5",
     "sequelize": "^4.13.8",
-    "serve-favicon": "~2.3.0"
+    "serve-favicon": "~2.3.0",
+    "validate": "^3.0.1"
   }
 }
