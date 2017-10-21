@@ -31,6 +31,10 @@ module.exports = function(app) {
  router.get('/register', function(req, res) {
     res.render('register.html', {});
   });
+    
+    router.get('/donate', function(req, res) {
+    res.render('donate.html', {});
+  });
 
   app.use('/', router);
 }
