@@ -87,14 +87,23 @@
 
                 </script>
                 <!-- //search-scripts -->
+
                 <div class="sign-box">
-                    <a href="/register"><div id="sb-sign" class="sb-sign">
+                  {% if user %}
+                  <a class="nav-link" href="/users/logout" data-toggle="modal" data-target="#exampleModal">
+                    <i class="fa fa-fw fa-sign-out"></i><div id="sb-sign" class="sb-sign">
+                       Выйти
+                        </div></a>
+                  {% else %}
+                    <a href="/users/register"><div id="sb-sign" class="sb-sign">
                        Зарегистрироваться
                         </div></a>
-                        <a href="/login"><div id="sb-sign" class="sb-sign">
+                        <a href="/users/auth"><div id="sb-sign" class="sb-sign">
                            Войти
                             </div></a>
+                            {% endif %}
                 </div>
+
                 <div class="clearfix"></div>
             </div>
 

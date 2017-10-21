@@ -25,6 +25,7 @@ module.exports = function(sequelize, DataTypes) {
     email: {
       type: DataTypes.STRING(100),
       allowNull: false,
+      unique: true,
       validate: {
         notEmpty: {
           args: true,
@@ -100,7 +101,7 @@ module.exports = function(sequelize, DataTypes) {
   };
 
   User.associate = function(models) {
-    
+
   };
 
   return User;

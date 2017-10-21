@@ -1,5 +1,5 @@
 module.exports = function(app, db) {
-  /*app.use(function(req, res, next) {
+  app.use(function(req, res, next) {
 
     var userId = req.session && req.session.user_id;
 
@@ -7,11 +7,12 @@ module.exports = function(app, db) {
       db.User.findById(userId).then(function(user) {
         if(user) {
             req.user = user;
+            res.locals.user = req.user;
         }
         next();
       });
     } else {
       next();
     }
-  });*/
+  });
 };

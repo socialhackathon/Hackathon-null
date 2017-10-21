@@ -17,6 +17,7 @@ module.exports = {
       },
       email: {
         type: Sequelize.STRING(100),
+        unique: true,
         allowNull: false
       },
       avatar: {

@@ -11,6 +11,14 @@ module.exports = {
         type: Sequelize.STRING(100),
         allowNull: false
       },
+      created_at: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
+      updated_at: {
+        allowNull: false,
+        type: Sequelize.DATE
+      },
     });
   },
   down: function(queryInterface, Sequelize) {

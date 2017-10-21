@@ -68,7 +68,7 @@ module.exports = function(app) {
     delete req.session.user_id;
     delete req.user;
     delete req.cookies;
-    res.redirect('/users/auth');
+    res.redirect('/');
   })
 
 
