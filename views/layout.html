@@ -26,7 +26,7 @@
     <!--start-smoth-scrolling-->
     <script type="text/javascript" src="/js/move-top.js"></script>
     <script type="text/javascript" src="/js/easing.js"></script>
-
+    <script type="text/javascript" src="/js/password-confirm.js"></script>
     <script type="text/javascript">
         jQuery(document).ready(function($) {
             $(".scroll").click(function(event) {
@@ -53,7 +53,7 @@
          <div class="container">
              <!-- logo -->
              <div class="logo">
-                 <a href="index.html"><img src="/images/logo4.png" title="Help hand" />
+                 <a href="/"><img src="/images/logo4.png" title="Help hand" />
                      <div><h1>Zhardam</h1></div></a>
              </div>
              <!-- /logo -->
@@ -63,7 +63,7 @@
                     <ul>
                         <li {%if url == "/" %} class="active" {% endif %} ><a href="/">Главная</a></li>
                         <li {%if url == "/publications" %} class="active" {% endif %}><a href="/publications">Объявления</a></li>
-                        <li {%if url == "/companies"%} class="active" {% endif %}><a href="/companies">Организации</a></li>
+                        <li {%if url == "/companies"%} class="active" {% endif %}><a href="/organizations">Организации</a></li>
                         <li {%if url == "/contact"%} class="active" {% endif %}><a href="/contact">Контакты</a></li>
 <!--                        <li {%if url == "/about"%} class="active" {% endif %}><a href="/about">О нас</a></li>-->
                         <div class="clearfix"> </div>

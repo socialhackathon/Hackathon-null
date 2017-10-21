@@ -46,9 +46,17 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: false
       },
+      name: {
+        type: Sequelize.STRING,
+        allowNull: true
+      }
       type: {
         type: Sequelize.INTEGER,
         defaultValue: 0
+      },
+      phone: {
+        type: Sequelize.STRING,
+        allowNull: false
       },
       status: {
         type: Sequelize.INTEGER,

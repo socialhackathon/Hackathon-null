@@ -22,6 +22,14 @@ module.exports = function(sequelize, DataTypes) {
         }
       }
     },
+    name: {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
+    phone: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
     type: {
       type: DataTypes.INTEGER,
       defaultValue: 0  //0-public, 1-anonym

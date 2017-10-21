@@ -8,8 +8,11 @@ module.exports = function(app) {
   var db = app.get('db');
   var filters = app.get('filters');
   router.get('/', function(req, res) {
-    res.render('companies.html', {});
-  })
+    db.Organization.findAll().then(function(organizations) {
+      console.log(organizations)
+      res.render('companies.html', {organizations: organizations});
+    });
+  });
   router.get('/form', filters.authRequired(), function(req, res) {
     res.render('organization-form.html', {})
   });

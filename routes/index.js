@@ -27,7 +27,7 @@ module.exports = function(app) {
   router.get('/contact', function(req, res) {
     res.render('contact.html', {});
   });
-    
+
  router.get('/register', function(req, res) {
     res.render('signup.html', {});
   });

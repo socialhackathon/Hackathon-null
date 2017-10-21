@@ -1,10 +1,15 @@
 {%extends 'layout.html'%}
 {%block main_class %}<div class="what"> {% endblock %}
   {%block content%}
+  <div style="display: none;">
+      <form action="/files/upload" method="POST" enctype="multipart/form-data" id="upload-avatar-form">
+        <input type="file" id="avatar-file" name="image" />
+      </form>
+  </div>
 <div class="Signup-section">
 	<div class="container">
 		<div class="Signup-grid">
-			<p class="back"><a href="index.html">Back to Previous</a></p>
+			<p class="back"><a href="/organizations">Вернуться назад</a></p>
 				 <div class="register">
 				  	  <form method="POST">
 						 <div class="register-top-grid">
@@ -21,11 +26,17 @@
 								 <span>Описание<label>*</label></span>
 								 <input type="text" name="description">
 							 </div>
+               <div>
+            <p><img src="" id="avatar-preview" /></p>
+           <span>Лого<label>*</label></span>
+           <input type="hidden" class="form-control" id="avatar" name="logo" value="{{ bot.avatar }}" >
+           <a href="#" id="choice-avatar-form" class="btn btn-primary">Выбрать</a>
+               </div>
 							 <div class="clearfix"> </div>
 							 </div>
 						<div class="clearfix"> </div>
 						<div class="register-but">
-							   <input type="submit" value="submit">
+							   <input class="btn btn-success" type="submit" value="Сохранить">
 							   <div class="clearfix"> </div>
 						   </form>
 
