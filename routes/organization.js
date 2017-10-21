@@ -13,6 +13,10 @@ module.exports = function(app) {
       res.render('companies.html', {organizations: organizations});
     });
   });
+  router.get('/:id/needlist', filters.authRequired(), function(req, res) {
+
+  });
+
   router.get('/form', filters.authRequired(), function(req, res) {
     res.render('organization-form.html', {})
   });
@@ -28,6 +32,8 @@ module.exports = function(app) {
       res.redirect('back');
     })
   });
+
+
 
   app.use('/organizations', router);
 };

@@ -11,81 +11,23 @@
 
             <div class="portfolio-top">
                 <h3>Помочь</h3>
-                <ul id="filters" class="clearfix">
-                    <li><span class="filter active" data-filter="app card icon logo web"> Все объявления</span></li>
-                    <li><span class="filter" data-filter="app">Категория 1</span></li>
-                    <li><span class="filter" data-filter="photo">Категория 2</span></li>
-                    <li><span class="filter" data-filter="card">Категори 3</span></li>
-                </ul>
                 <div id="portfoliolist">
+                  {% for need in needs%}
                     <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
                         <div class="portfolio-wrapper">
                             <a href="images/d11.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
-						     <img src="images/d1.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
+						     <img src="{%if need.attachment %} {{ need.attachment }}{% else %}images/d1.png{%endif%}" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
 						  	 </div></a>
                         </div>
                         <div class="small-text">
-                            <h5>ipsum dolor</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
+                            <h5>{{need.content}}</h5>
+                            <p>{{need.description}}</p>
                         </div>
+                        {%if isOrganizator%}
+                        <a data-id="{{need.id}}" class="company-btn" href="#">Помочь</a>
+                        {%endif%}
                     </div>
-                    <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-                        <div class="portfolio-wrapper">
-                            <a href="images/d21.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
-						     <img src="images/d2.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
-						  	 </div></a>
-
-                        </div>
-                        <div class="small-text">
-                            <h5>ipsum dolor</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
-                        </div>
-                    </div>
-                    <div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
-                        <div class="portfolio-wrapper">
-                            <a href="images/d31.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
-						     <img src="images/d3.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
-						  	 </div></a>
-                        </div>
-                        <div class="small-text">
-                            <h5>ipsum dolor</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
-                        </div>
-
-                    </div>
-                    <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
-                        <div class="portfolio-wrapper">
-                            <a href="images/d41.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
-						     <img src="images/d4.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
-						  	 </div></a>
-                        </div>
-                        <div class="small-text">
-                            <h5>ipsum dolor</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
-                        </div>
-                    </div>
-                    <div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
-                        <div class="portfolio-wrapper">
-                            <a href="images/d51.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
-						     <img src="images/d5.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
-						  	 </div></a>
-                        </div>
-                        <div class="small-text">
-                            <h5>ipsum dolor</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
-                        </div>
-                    </div>
-                    <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
-                        <div class="portfolio-wrapper">
-                            <a href="images/d61.png" class="b-link-stripe b-animate-go  swipebox" title="Image Title">
-						     <img src="images/d6.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
-						  	 </div></a>
-                        </div>
-                        <div class="small-text">
-                            <h5>ipsum dolor</h5>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
-                        </div>
-                    </div>
+                    {% endfor %}
                 </div>
             </div>
         </div>

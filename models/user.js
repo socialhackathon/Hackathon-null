@@ -101,7 +101,7 @@ module.exports = function(sequelize, DataTypes) {
   };
 
   User.associate = function(models) {
-
+    this.hasMany(models.Organization, {foreignKey: 'creator_id'});
   };
 
   return User;

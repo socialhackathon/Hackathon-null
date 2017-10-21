@@ -1,0 +1,155 @@
+{%extends 'layout.html' %}
+{%block main_class %}<div class="what"> {% endblock %}
+  {%block content%}
+
+    <!-- /header -->
+    <!-- slider -->
+
+   <div class="portfolios entertain_box  wow fadeInUp" data-wow-delay="0.4s" id="project">
+        <div class="container">
+
+
+            <div class="portfolio-top">
+                <h3>Помочь</h3>
+                <ul id="filters" class="clearfix">
+                    <li><span class="filter active" data-filter="app card icon logo web"> Все объявления</span></li>
+                    <li><span class="filter" data-filter="app">Категория 1</span></li>
+                    <li><span class="filter" data-filter="photo">Категория 2</span></li>
+                    <li><span class="filter" data-filter="card">Категори 3</span></li>
+                </ul>
+                <div id="portfoliolist">
+                    <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="images/d11.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
+						     <img src="images/d1.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
+						  	 </div></a>
+                        </div>
+                        <div class="small-text">
+                            <h5>ipsum dolor</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="images/d21.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
+						     <img src="images/d2.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
+						  	 </div></a>
+
+                        </div>
+                        <div class="small-text">
+                            <h5>ipsum dolor</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="images/d31.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
+						     <img src="images/d3.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
+						  	 </div></a>
+                        </div>
+                        <div class="small-text">
+                            <h5>ipsum dolor</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
+                        </div>
+
+                    </div>
+                    <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="images/d41.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
+						     <img src="images/d4.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
+						  	 </div></a>
+                        </div>
+                        <div class="small-text">
+                            <h5>ipsum dolor</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="images/d51.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
+						     <img src="images/d5.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
+						  	 </div></a>
+                        </div>
+                        <div class="small-text">
+                            <h5>ipsum dolor</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="images/d61.png" class="b-link-stripe b-animate-go  swipebox" title="Image Title">
+						     <img src="images/d6.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
+						  	 </div></a>
+                        </div>
+                        <div class="small-text">
+                            <h5>ipsum dolor</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="css/swipebox.css">
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+            $(".swipebox").swipebox();
+        });
+
+    </script>
+    <!-- Portfolio Ends Here -->
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+
+            var filterList = {
+
+                init: function() {
+
+                    // MixItUp plugin
+                    // http://mixitup.io
+                    $('#portfoliolist').mixitup({
+                        targetSelector: '.portfolio',
+                        filterSelector: '.filter',
+                        effects: ['fade'],
+                        easing: 'snap',
+                        // call the hover effect
+                        onMixEnd: filterList.hoverEffect()
+                    });
+
+                },
+
+                hoverEffect: function() {
+
+                    // Simple parallax effect
+                    $('#portfoliolist .portfolio').hover(
+                        function() {
+                            $(this).find('.label').stop().animate({
+                                bottom: 0
+                            }, 200, 'easeOutQuad');
+                            $(this).find('img').stop().animate({
+                                top: -30
+                            }, 500, 'easeOutQuad');
+                        },
+                        function() {
+                            $(this).find('.label').stop().animate({
+                                bottom: -40
+                            }, 200, 'easeInQuad');
+                            $(this).find('img').stop().animate({
+                                top: 0
+                            }, 300, 'easeOutQuad');
+                        }
+                    );
+
+                }
+
+            };
+
+            // Run the show!
+            filterList.init();
+
+        });
+
+    </script>
+{% endblock %}

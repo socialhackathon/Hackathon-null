@@ -71,6 +71,15 @@ module.exports = function(app) {
     res.redirect('/');
   })
 
+  router.get('/myorg', filters.authRequired(), function(req, res) {
+    db.Organization.findAll({
+      where: {
+        creator_id: req.user.get('id')
+      }
+    }).then(function(org) {
+      res.render('myorg.html', {organizations: org})
+    });
+  });
 
   app.use('/users', router);
 };

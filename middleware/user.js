@@ -4,7 +4,14 @@ module.exports = function(app, db) {
     var userId = req.session && req.session.user_id;
 
     if (userId && !isNaN(userId)) {
-      db.User.findById(userId).then(function(user) {
+      db.User.find({
+        where: {
+          id: userId
+        },
+        include: [{
+          model: db.Organization
+        }]
+      }).then(function(user) {
         if(user) {
             req.user = user;
             res.locals.user = req.user;

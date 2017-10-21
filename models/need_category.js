@@ -18,7 +18,6 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   NeedCategory.associate = function(models) {
-    this.belongsTo(models.User, {foreignKey: "creator_id"})
   };
 
   return NeedCategory;

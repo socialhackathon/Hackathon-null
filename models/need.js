@@ -14,7 +14,7 @@ module.exports = function(sequelize, DataTypes) {
     },
     user_id: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
       validate: {
         notEmpty: {
           args: true,
@@ -72,7 +72,7 @@ module.exports = function(sequelize, DataTypes) {
   });
 
   Need.associate = function(models) {
-    this.belongsTo(models.User, {foreignKey: "creator_id"});
+    this.belongsTo(models.User, {foreignKey: "user_id"});
     this.belongsTo(models.NeedCategory, {foreignKey: "category_id"});
     this.belongsTo(models.City, {foreignKey: 'city_id'});
     this.hasMany(models.OrganizationNeed, {foreignKey: 'need_id'});

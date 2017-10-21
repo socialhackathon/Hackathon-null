@@ -93,9 +93,13 @@
 
                 <div class="sign-box">
                   {% if user %}
+
                   <a href="/users/logout"><div id="sb-sign" class="sb-sign">
                      Выйти
                       </div></a>
+                      <a href="/users/myorg"><div id="sb-sign" class="sb-sign">
+                         Кабинет
+                          </div></a>
                   {% else %}
                     <a href="/users/register"><div id="sb-sign" class="sb-sign">
                        Регистрация
@@ -241,6 +245,13 @@
         });
 
     </script>
+    <script src="/vendor/jquery/jquery.min.js"></script>
+    <script src="/vendor/popper/popper.min.js"></script>
+    <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="/js/sb-admin.min.js"></script>
     <a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 </body>
 

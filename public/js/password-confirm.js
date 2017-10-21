@@ -31,6 +31,12 @@ $(document).ready(function() {
       $('#avatar-file').click();
       return false;
   });
+  $(".company-btn").click(function() {
+    $.get('/needs/' + $(this).attr('data-id') + '/addorg', function(result) {
+      $("#send-event-join-request").replaceWith($("<div class='btn btn-primary'>Вы являетесь участником </div>"));
+    })
+    $(this).replaceWith($("<h3>Вы являетесь участником </h3>"))
+  })
   $("#send-event-join-request").on('click', function() {
     $.get('/events/' + $('#send-event-join-request').attr('event_id') + '/join', function(result) {
       $("#send-event-join-request").replaceWith($("<div class='btn btn-primary'>Вы являетесь участником </div>"));
