@@ -48,24 +48,24 @@
 
 <body>
     <!-- header -->
-   {%block main_class %} {% endblock %}
-     <div class="header">
-         <div class="container">
-             <!-- logo -->
-             <div class="logo">
-                 <a href="index.html"><img src="images/logo4.png" title="Help hand" />
-                     <div><h1>Zhardam</h1></div></a>
-             </div>
-             <!-- /logo -->
-             <!-- top-nav -->
+    <div class="companies">
+        <div class="header">
+            <div class="container">
+                <!-- logo -->
+                <div class="logo">
+                    <a href="index.html"><img src="images/logo4.png" title="Help hand" />
+                        <div><h1>Zhardam</h1></div></a>
+                </div>
+                <!-- /logo -->
+                <!-- top-nav -->
                 <div class="top-nav">
                     <span class="menu"> </span>
                     <ul>
-                        <li {%if url == "/" %} class="active" {% endif %} ><a href="/">Главная</a></li>
-                        <li {%if url == "/publications" %} class="active" {% endif %}><a href="/publications">Объявления</a></li>
-                        <li {%if url == "/companies"%} class="active" {% endif %}><a href="/companies">Организации</a></li>
-                        <li {%if url == "/contact"%} class="active" {% endif %}><a href="/contact">Контакты</a></li>
-                        <li {%if url == "/about"%} class="active" {% endif %}><a href="/about">О нас</a></li>
+                        <li><a href="index.html">Главная</a></li>
+                        <li class="active"><a href="publications.html">Объявления</a></li>
+                        <li><a href="companies.html">Организации</a></li>
+                        <li><a href="contact.html">Контакты</a></li>
+                        <li><a href="what.html">О нас</a></li>
                         <div class="clearfix"> </div>
                     </ul>
                 </div>
@@ -87,11 +87,6 @@
 
                 </script>
                 <!-- //search-scripts -->
-                <div class="sign-box">
-                    <a><div id="sb-sign" class="sb-sign">
-                       Вход
-                        </div></a>
-                </div>
                 <div class="clearfix"></div>
             </div>
 
@@ -108,27 +103,99 @@
             <!-- /top-nav -->
             <div class="clearfix"> </div>
         </div>
-
-            <!-- script-for-nav -->
-            <script>
-                $(document).ready(function() {
-                    $("span.menu").click(function() {
-                        $(".top-nav ul").slideToggle(300);
-                    });
-                });
-
-            </script>
-            <!-- script-for-nav -->
-            <!-- /top-nav -->
-            <div class="clearfix"> </div>
-        </div>
     </div>
-
+    
     <!-- /header -->
     <!-- slider -->
-    <!--/start-services-->
-    {%block content%}
-    {% endblock %}
+   
+   <div class="portfolios entertain_box  wow fadeInUp" data-wow-delay="0.4s" id="project">
+        <div class="container">
+            
+
+            <div class="portfolio-top">
+                <h3>Помочь</h3>
+                <ul id="filters" class="clearfix">
+                    <li><span class="filter active" data-filter="app card icon logo web"> Все объявления</span></li>
+                    <li><span class="filter" data-filter="app">Категория 1</span></li>
+                    <li><span class="filter" data-filter="photo">Категория 2</span></li>
+                    <li><span class="filter" data-filter="card">Категори 3</span></li>
+                </ul>
+                <div id="portfoliolist">
+                    <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="images/d11.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
+						     <img src="images/d1.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
+						  	 </div></a>
+                        </div>
+                        <div class="small-text">
+                            <h5>ipsum dolor</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="images/d21.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
+						     <img src="images/d2.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
+						  	 </div></a>
+
+                        </div>
+                        <div class="small-text">
+                            <h5>ipsum dolor</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="images/d31.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
+						     <img src="images/d3.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
+						  	 </div></a>
+                        </div>
+                        <div class="small-text">
+                            <h5>ipsum dolor</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
+                        </div>
+
+                    </div>
+                    <div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="images/d41.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
+						     <img src="images/d4.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
+						  	 </div></a>
+                        </div>
+                        <div class="small-text">
+                            <h5>ipsum dolor</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="portfolio photo mix_all" data-cat="photo" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="images/d51.png" class="b-link-stripe b-animate-go   swipebox" title="Image Title">
+						     <img src="images/d5.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
+						  	 </div></a>
+                        </div>
+                        <div class="small-text">
+                            <h5>ipsum dolor</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
+                        </div>
+                    </div>
+                    <div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+                        <div class="portfolio-wrapper">
+                            <a href="images/d61.png" class="b-link-stripe b-animate-go  swipebox" title="Image Title">
+						     <img src="images/d6.png" /><div class="b-wrapper"><h2 class="b-animate b-from-left    b-delay03 "><img src="images/search.png" alt=""/></h2>
+						  	 </div></a>
+                        </div>
+                        <div class="small-text">
+                            <h5>ipsum dolor</h5>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.Pellentesque eu erat lacus, consectetur</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+    <!--strat-image-cursuals-->
     <div class="scroll-slider">
         <div class="container">
             <div class="nbs-flexisel-container">
@@ -180,6 +247,7 @@
             </script>
         </div>
     </div>
+
     <!--/start-footer-->
     <div class="footer">
         <div class="container">
@@ -216,7 +284,7 @@
 								  			containerID: 'toTop', // fading element id
 											containerHoverID: 'toTopHover', // fading element hover id
 											scrollSpeed: 1200,
-											easingType: 'linear'
+											easingType: 'linear' 
 								 		};
 										*/
 
