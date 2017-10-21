@@ -1,21 +1,21 @@
 {
   "development": {
     "username": "root",
-    "password": "xynd4815162342",
+    "password": "2E1k5r7e",
     "database": "hackathon_db",
-    "host": "127.0.0.1",
+    "host": "localhost",
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": "root",
+    "password": "2E1k5r7e",
     "database": "database_test",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
   "production": {
     "username": "root",
-    "password": "root",
+    "password": "2E1k5r7e",
     "database": "database_production",
     "host": "127.0.0.1",
     "dialect": "mysql"
