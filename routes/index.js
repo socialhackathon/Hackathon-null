@@ -20,8 +20,8 @@ module.exports = function(app) {
     res.render('companies.html', {});
   });
 
-  router.get('/reports', function(req, res) {
-    res.render('blog.html', {});
+  router.get('/publications', function(req, res) {
+    res.render('publications.html', {});
   });
 
   router.get('/contact', function(req, res) {

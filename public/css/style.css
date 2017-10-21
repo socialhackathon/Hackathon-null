@@ -225,7 +225,7 @@ div.slide-text-info {
 .sb-search {
 	width: 0%;
 	position: absolute;
-	right: 239px;
+	right: 139px;
 	top: 17px;
 	min-width:45px;
 	height: 49px;
@@ -3430,4 +3430,18 @@ a.slide-btn{
 	top: 13px;
 	right: 67px;
 	}
+}
+
+.sb-sign {
+    display: block;
+    cursor: pointer;
+	position: absolute;
+	right: 59px;
+	top: 17px;
+	min-width:55px;
+	height: 29px;
+	float: right;
+    border: 3px solid #DA515B;
+	border-radius: 2px;
+    text-decoration: none;
 }
