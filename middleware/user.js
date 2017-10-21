@@ -1,5 +1,5 @@
 module.exports = function(app, db) {
-  app.use(function(req, res, next) {
+  /*app.use(function(req, res, next) {
 
     var userId = req.session && req.session.user_id;
 
@@ -13,5 +13,5 @@ module.exports = function(app, db) {
     } else {
       next();
     }
-  });
+  });*/
 };
