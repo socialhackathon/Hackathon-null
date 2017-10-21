@@ -45,7 +45,7 @@ app.use(session({
     maxAge: cookieLifeTime
   }
 }));
-app.use(flash());
+//app.use(flash());
 var mdHandlers = glob.sync(config.ROOT + '/middleware/*.js');
 mdHandlers.forEach(function(mdHandler) {
     require(mdHandler)(app, db);
@@ -83,6 +83,7 @@ app.use(function(req, res, next) {
 if (app.get('env') === 'development') {
   app.use(function(err, req, res, next) {
     res.status(err.status || 500);
+    console.log(err);
     res.render('error.html', {
       message: err.message,
       error: err
