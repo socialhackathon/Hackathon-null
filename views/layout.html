@@ -62,10 +62,11 @@
                     <span class="menu"> </span>
                     <ul>
                         <li {%if url == "/"%} class="active" {% endif %} ><a href="/">Главная</a></li>
-                        <li {%if url == "/about"%} class="active" {% endif %}><a href="/about">О нас</a></li>
+                        <li{%if url == "/blog"%} class="active" {% endif %}><a href="/blog">Объявления</a></li>
                         <li{%if url == "/companies"%} class="active" {% endif %}><a href="/companies">Компании</a></li>
                         <li{%if url == "/reports"%} class="active" {% endif %}><a href="/reports">Отчеты</a></li>
                         <li{%if url == "/contact"%} class="active" {% endif %}><a href="/contact">Контакты</a></li>
+                        <li {%if url == "/about"%} class="active" {% endif %}><a href="/about">О нас</a></li>
                         <div class="clearfix"> </div>
                     </ul>
                 </div>
