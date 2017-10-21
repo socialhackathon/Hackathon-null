@@ -17,7 +17,7 @@ module.exports = function(app) {
   });
 
   router.get('/companies', function(req, res) {
-    res.render('donate.html', {});
+    res.render('companies.html', {});
   });
 
   router.get('/reports', function(req, res) {

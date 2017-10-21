@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html>
 
@@ -50,15 +49,15 @@
 <body>
     <!-- header -->
    {%block main_class %} {% endblock %}
-        <div class="header">
-            <div class="container">
-                <!-- logo -->
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo4.png" title="Help hand" />
-                        <div><h1>Zhardam</h1><span>Телефон: 0 555 222 333</span></div></a>
-                </div>
-                <!-- /logo -->
-                <!-- top-nav -->
+     <div class="header">
+         <div class="container">
+             <!-- logo -->
+             <div class="logo">
+                 <a href="index.html"><img src="images/logo4.png" title="Help hand" />
+                     <div><h1>Zhardam</h1></div></a>
+             </div>
+             <!-- /logo -->
+             <!-- top-nav -->
                 <div class="top-nav">
                     <span class="menu"> </span>
                     <ul>
@@ -90,6 +89,20 @@
                 <!-- //search-scripts -->
                 <div class="clearfix"></div>
             </div>
+
+            <!-- script-for-nav -->
+            <script>
+                $(document).ready(function() {
+                    $("span.menu").click(function() {
+                        $(".top-nav ul").slideToggle(300);
+                    });
+                });
+
+            </script>
+            <!-- script-for-nav -->
+            <!-- /top-nav -->
+            <div class="clearfix"> </div>
+        </div>
 
             <!-- script-for-nav -->
             <script>

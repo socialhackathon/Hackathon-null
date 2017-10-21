@@ -1113,7 +1113,22 @@ pre code {
     width: 41.66666667%;
   }
   .col-md-4 {
-    width: 33.33333333%;
+      width: 33%;
+  }
+    .col-md-41 {
+    width: 25%;
+      float: left;
+      position: relative;
+  }
+      .col-md-51 {
+    width: 50%;
+          position: relative;
+          float: left;
+  }
+      .col-md-61 {
+    width: 25%;
+          position: relative;
+          float: left;
   }
   .col-md-3 {
     width: 25%;

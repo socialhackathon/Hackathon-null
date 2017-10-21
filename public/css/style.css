@@ -12,6 +12,7 @@ body{
 .header {
 	padding:2.2em 0;
 	background: #F5FFFA;
+    border-bottom: 1px solid #5DA3C7;
 }
 
 span.menu{
@@ -35,9 +36,9 @@ span.menu{
 	padding:0;
 	display:inline-block;
 	font-weight:400;
-	font-size:1em;
+	font-size:17px;
 	text-decoration:none;
-	color:#9ED4EA;
+	color:#5DA3C7;
 	text-transform: uppercase;
 	transition: 0.5s all;
 	-webkit-transition: 0.5s all;
@@ -56,11 +57,9 @@ span.menu{
 .logo{
 	float: left;
 position: absolute;
-top: -2px;
-background: ;
-padding: 0em 0ergba( 189, 234, 219, 0 )m 2em 0.2em;
     height: 80px;
-/*    width: 500px;*/
+    width: 250px;
+    top: 3px;
 }
 .logo a{
 	text-decoration: none;
@@ -71,27 +70,32 @@ padding: 0em 0ergba( 189, 234, 219, 0 )m 2em 0.2em;
 	font-weight: 600;
 	font-size:1.6em;
 	text-decoration: none;
-	color: #e8792d;
+	color: #FF0000;
 	text-align: center;
 	font-family: 'Oswald', sans-serif;
-    position: relative;
-    top: 0;
-	margin:5px 20px 10px 20px;
+    position: relative;    
+	margin-left: 20px;
+	margin-right: 20px;
 }
 .logo a div{
+    position: relative;
     height: 80px;
     width: 150px;
+    float: left;
+margin-top: auto;
 }
 .logo a img{
+    float: left;
     position: relative;
     left: 0;
     height: 80px;
+    width: 80px;
 }
 .logo span {
 	font-weight:300;
 font-size: 0.9em;
 text-decoration: none;
-color: #fff;
+color: #CD5C5C;
 text-align: center;
 margin:0px 0;
 font-family:'Arimo', sans-serif;
@@ -286,7 +290,7 @@ div.slide-text-info {
 	-webkit-appearance: none;
 }
 .sb-icon-search {
-  background: #bd9260 url('../images/search.png') no-repeat 5px 3px;
+  background: #CD5C5C url('../images/search.png') no-repeat 5px 3px;
 	z-index: 90;
 	cursor: pointer;
 }
@@ -330,7 +334,7 @@ text-align:center;
 
 /*-----------*/
 .Stories-section{
-		background:#bd9260;
+		background:#F2FFFA;
 		padding:4em 0 0 0;
 	}
 .story-grids{
@@ -347,7 +351,7 @@ text-align:center;
 	padding:1.2em 2em 4em 4em;
 }
 .Stories-section h3 {
-	color:#ffffff;
+	color:#020202;
 	font-size:2em;
 	margin:0 auto 1.2em 0;
 	font-family: 'Arimo Sans', sans-serif;
@@ -364,7 +368,6 @@ text-align:center;
 	width: 90%;
 	margin: 0;
 }
-/*----*/
 a.story-btn{
 	padding:0.8em 0.8em;
 	text-decoration:none;
@@ -400,6 +403,89 @@ border-radius: 50%;
 -moz-border-radius: 50%;
 border:4px solid#68a6ca;
 }
+/*----*/
+.Companies-section{
+		background:#F2FFFA;
+		padding:4em 0 0 0;
+	}
+.Companies-section h3 {
+	color:#020202;
+	font-size:2em;
+	margin:0 auto 1.2em 0;
+	font-family: 'Arimo Sans', sans-serif;
+	font-weight:500;
+	text-align: left;
+	text-transform: uppercase;
+}
+.company-grids{
+/*	background:url(../images/story-bg.png);*/
+    margin-bottom: 15px;
+}
+.company-grid.one{
+	padding: 4em 1em 1em 4em;
+    border: 2px solid #64A3C5;
+    
+	border-radius: 0.5em;
+	-o-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+}
+.company-grid.one:hover{
+	padding: 4em 1em 1em 4em;
+    border: 2px solid #64A3C5;
+    
+	border-radius: 0.5em;
+	-o-border-radius: 0.5em;
+	-moz-border-radius: 0.5em;
+	-webkit-border-radius: 0.5em;
+box-shadow: 0 0 10px rgba(0,0,0,0.5);        
+}
+.company-grid-text p {
+	color: #020202;
+	font-size: 1.23em;
+	line-height: 1.8em;
+	font-family: 'Arimo Sans', sans-serif;
+	font-weight: 300;
+	width: 90%;
+}
+a.company-btn{
+	padding:0.8em 0.8em;
+	text-decoration:none;
+	font-family: 'Arimo', sans-serif;
+	border:2px solid#64A3C5;
+	margin-top: 1em;
+	display: inline-block;
+	color: #020202;
+	font-size: 1.1em;
+	text-align:center;
+	text-transform: uppercase;
+	-webkit-appearance:none;
+	transition: 0.5s all;
+	-webkit-transition: 0.5s all;
+	-moz-transition: 0.5s all;
+	-o-transition: 0.5s all;
+	background: none;
+	width:30%;
+	border-radius: 0.3em;
+	-o-border-radius: 0.3em;
+	-moz-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+}
+a.company-btn:hover{
+	text-decoration:none;
+	color:#fff;
+	background: #64A3C5;
+}
+.company-grid-img img {
+border-radius: 50%;
+-o-border-radius: 50%;
+-webkit-border-radius: 50%;
+-moz-border-radius: 50%;
+border:4px solid#68a6ca;
+    height: 121px;
+    width: 121px;
+}
+/*----*/
 /*---part-section----*/
 .parts-section {
 text-align: center;
@@ -551,19 +637,19 @@ a.view-btn:hover{
 	text-decoration:none;
 	color:#175677;
 	background: #64A3C5;
-	border:2px dotted#175677;
+	border:2px dotted #175677;
 }
 /*-----gallery---------*/
 div#gallery {
 	text-align:left;
 	padding: 3em 0 4em 0;
-	background: #d0ae89;
+	background: #F2FFFA;
 }
 .gallery-head {
 	margin: 1em 0;
 }
 .gallery-head h3 {
-	color: #ffffff;
+	color: #020202;
 font-size: 2em;
 margin: 0 auto 1.2em 0;
 font-family: 'Arimo Sans', sans-serif;
@@ -2333,7 +2419,7 @@ margin: 2em 0;
 		margin-left:0px;
 	}
 	.footer-grid-icons h3,.footer-grid-text h3{
-	color: #c89b6a;
+	color: #DA515B;
 	font-size:1.6em;
 	margin:0.5em auto 0.5em 0;
 	font-family: 'Arimo Sans', sans-serif;
@@ -2364,12 +2450,12 @@ a.sign-btn {
 	-o-transition: all 0.3s ease-out;
 	transition: all 0.3s ease-out;
 	font-weight: 700;
-	border:2px solid#d0ae89;
+	border:2px solid#DA515B;
 	outline: none;
 	text-align: center;
 	font-family: 'Arimo Sans', sans-serif;
 	cursor: pointer;
-	background:#d0ae89;
+	background:#DA515B;
 	width:55%;
 }
 a.sign-btn:hover{
@@ -2489,6 +2575,7 @@ a.sign-btn:hover{
 	.slider-caption h2{
 	font-size: 3.4em;
 	width: 77%;
+        color: #CD5C5C;
 }
 .slider-caption p{
 	font-size:1.2em;
@@ -2502,11 +2589,13 @@ a.slide-btn{
 	color: #FFF;
 	font-size: 1.3em;
 	width:48%;
+    margin-bottom: 1em;
 }
 .slider-caption {
+    background-color: rgba( 200, 200, 200, 0.423 );
 	z-index: 999;
 	left: 20%;
-	top: 45%;
+	top: 25%;
 	width: 56%;
 	}
 }
