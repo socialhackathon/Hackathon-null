@@ -290,9 +290,12 @@ div.slide-text-info {
 	-webkit-appearance: none;
 }
 .sb-icon-search {
-  background: #CD5C5C url('../images/search.png') no-repeat 5px 3px;
+  background: #54A0C9 url('../images/search.png') no-repeat 5px 3px;
 	z-index: 90;
 	cursor: pointer;
+}
+.sb-icon-search:hover{    
+  background: #DA515B url('../images/search.png') no-repeat 5px 3px;
 }
 /* Open state */
 .sb-search.sb-search-open,.no-js .sb-search {
@@ -1524,7 +1527,7 @@ border:1px solid#999;
 	background:#F5F1F1;
 	margin-bottom: 6%;
 	font-family: 'Arimo Sans', sans-serif;
-	color: #999;
+	color: #020202;
 	font-weight:400;
 	font-size: 14px;
 	outline: none;
@@ -2185,7 +2188,7 @@ background-size: cover;
 	font-size: 1em;
 	padding: 0.8em;
 	font-family: 'Arimo Sans', sans-serif;
-	color: #999;
+	color: #020202;
 }
 .donate-top span {
 color: #999;
@@ -3442,7 +3445,7 @@ a.slide-btn{
 
 .sb-sign {
     position: relative;
-    padding: 5px 10px;
+    padding: 0.8em 15px;
     margin-right: 10px;
     text-align: center;
     padding-top: 6px;
@@ -3451,8 +3454,15 @@ a.slide-btn{
     cursor: pointer;
 	height: 45px;
 	float: right;
-    border: 3px solid #DA515B;
+    color: #54A0C9;
+    border: 2px solid #54A0C9;
     text-decoration: none;
+}
+.sb-sign:hover{
+    color: #fff;
+    border: 2px solid #DA515B;
+    -webkit-transition: 0.5s all;
+    background-color: #DA515B;
 }
 
 .sign-box {
