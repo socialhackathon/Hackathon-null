@@ -225,9 +225,9 @@ div.slide-text-info {
 .sb-search {
 	width: 0%;
 	position: absolute;
-	right: 139px;
 	top: 17px;
 	min-width:45px;
+    right: 259px;
 	height: 49px;
 	float: right;
 	overflow: hidden;
@@ -296,7 +296,7 @@ div.slide-text-info {
 }
 /* Open state */
 .sb-search.sb-search-open,.no-js .sb-search {
-	width:18%;
+	width:15%;
 }
 .sb-search.sb-search-open .sb-icon-search,.no-js .sb-search .sb-icon-search {
 	background: #c0c0c0 url('../images/search.png') no-repeat -20px 7px;
@@ -918,8 +918,8 @@ font-weight:400;
 }
 .portfolios{
 padding: 3em 0 4em 0;
-background: #BD9260;
 }
+
 /*	Strip
 /*-----------------------------------------------------------------------------------*/
 .b-link-stripe{
@@ -1093,6 +1093,11 @@ transition: 0.5s all;
 	border: 2px solid #333;
 	color:#333;
 	}
+
+#filters li span{
+    color: #77A2C4;
+    border: 2px solid #77A2C4;
+}
  	#portfoliolist .portfolio {
 		-webkit-box-sizing: border-box;
 		-moz-box-sizing: border-box;
@@ -3433,15 +3438,23 @@ a.slide-btn{
 }
 
 .sb-sign {
+    position: relative;
+    padding: 5px 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding-top: 6px;
+    font-size: 1.3em;
     display: block;
     cursor: pointer;
-	position: absolute;
-	right: 59px;
-	top: 17px;
-	min-width:55px;
-	height: 29px;
+	height: 45px;
 	float: right;
     border: 3px solid #DA515B;
-	border-radius: 2px;
     text-decoration: none;
+}
+
+.sign-box {
+    position: absolute;
+    right: 10px;
+    top: 17px;
+    float: right;
 }
