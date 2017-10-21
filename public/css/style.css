@@ -155,7 +155,7 @@ a.slide-btn{
 	border:2px solid#64A3C5;
 	margin-top: 1em;
 	display: inline-block;
-	color: #FFF;
+	color: #54A0C9;
 	font-size: 1.3em;
 	text-align:center;
 	text-transform: uppercase;
@@ -170,8 +170,9 @@ a.slide-btn{
 }
 a.slide-btn:hover{
 	text-decoration:none;
-	color: #073145;
-	background: #64A3C5;
+	color: #fff;
+	background: #DA515B;
+    border: 2px solid #DA515B;
 }
 div.slide-text-info {
 	margin-top: 6em;
@@ -316,7 +317,7 @@ text-align:center;
 	margin:2em 0;
 }
 .service-grid h3 {
-	color: #423a2f;
+	color: #020202;
 	font-size: 1.5em;
 	margin: 0.5em auto;
 	font-family: 'Arimo Sans', sans-serif;
@@ -495,7 +496,7 @@ padding: 3em 0 4em 0;
 	margin:4em 0 2em 0;
 }
 .service-grid h3 {
-	color: #423a2f;
+	color: #020202;
 	font-size: 1.5em;
 	margin: 0.5em auto;
 	font-family: 'Arimo Sans', sans-serif;
@@ -2598,7 +2599,7 @@ a.slide-btn{
 	padding:0.8em 1em;
 	margin-top: 1em;
 	display: inline-block;
-	color: #FFF;
+	color: #54A0C9;
 	font-size: 1.3em;
 	width:48%;
     margin-bottom: 1em;
