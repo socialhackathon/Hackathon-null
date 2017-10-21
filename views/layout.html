@@ -65,7 +65,7 @@
                         <li {%if url == "/publications" %} class="active" {% endif %}><a href="/publications">Объявления</a></li>
                         <li {%if url == "/companies"%} class="active" {% endif %}><a href="/companies">Организации</a></li>
                         <li {%if url == "/contact"%} class="active" {% endif %}><a href="/contact">Контакты</a></li>
-                        <li {%if url == "/about"%} class="active" {% endif %}><a href="/about">О нас</a></li>
+<!--                        <li {%if url == "/about"%} class="active" {% endif %}><a href="/about">О нас</a></li>-->
                         <div class="clearfix"> </div>
                     </ul>
                 </div>
@@ -87,16 +87,14 @@
 
                 </script>
                 <!-- //search-scripts -->
-
+                {% if user %}
+                <a href="/users/logout"><div id="sb-sign" class="sb-sign">
+                   Выйти
+                    </div></a>
+                {% else %}
                 <div class="sign-box">
-                  {% if user %}
-                  <a class="nav-link" href="/users/logout" data-toggle="modal" data-target="#exampleModal">
-                    <i class="fa fa-fw fa-sign-out"></i><div id="sb-sign" class="sb-sign">
-                       Выйти
-                        </div></a>
-                  {% else %}
-                    <a href="/users/register"><div id="sb-sign" class="sb-sign">
-                       Зарегистрироваться
+                    <a href="/register"><div id="sb-sign" class="sb-sign">
+                       Регистрация
                         </div></a>
                         <a href="/users/auth"><div id="sb-sign" class="sb-sign">
                            Войти
