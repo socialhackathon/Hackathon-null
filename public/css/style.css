@@ -235,7 +235,6 @@ div.slide-text-info {
 	-moz-transition: width 0.3s;
 	transition: width 0.3s;
 	-webkit-backface-visibility: hidden;
-	border-radius: 49px;
 }
 .sb-search-input {
 	position: absolute;
@@ -251,7 +250,6 @@ div.slide-text-info {
 	padding: 5px 15px;
 	font-size: 15px;
 	color: #ffffff;
-	border-radius: 49px;
 }
 .sb-search-input::-webkit-input-placeholder {
 	color: #ffffff;
@@ -277,7 +275,6 @@ div.slide-text-info {
 	line-height: 71px;
 	text-align: center;
 	cursor: pointer;
-	border-radius: 49px;
 }
 .sb-search-submit {
 	background: #a7d5ec url('../images/search.png') no-repeat 5px 3px;
@@ -290,9 +287,12 @@ div.slide-text-info {
 	-webkit-appearance: none;
 }
 .sb-icon-search {
-  background: #CD5C5C url('../images/search.png') no-repeat 5px 3px;
+  background: #54A0C9 url('../images/search.png') no-repeat 5px 3px;
 	z-index: 90;
 	cursor: pointer;
+}
+.sb-icon-search:hover{    
+  background: #DA515B url('../images/search.png') no-repeat 5px 3px;
 }
 /* Open state */
 .sb-search.sb-search-open,.no-js .sb-search {
@@ -1524,7 +1524,7 @@ border:1px solid#999;
 	background:#F5F1F1;
 	margin-bottom: 6%;
 	font-family: 'Arimo Sans', sans-serif;
-	color: #999;
+	color: #020202;
 	font-weight:400;
 	font-size: 14px;
 	outline: none;
@@ -1541,7 +1541,7 @@ border:1px solid#999;
 	-ms-transition:	0.5s;
  	
  }
-.login-form form  input[type="submit"]{
+.login-form  input[type="submit"]{
 	width: 99%;
 	padding: 3%;
 	margin-bottom: 8%;
@@ -1560,9 +1560,9 @@ border:1px solid#999;
 	-o-transition: 0.5s;
 	-ms-transition: 0.5s;
 }
-.login-form form  input[type="submit"]:hover{
+.login-form  input[type="submit"]:hover{
 	background:#a7d5ec;
-	color:#fff;
+	color:#6DC2E6;
 }
 .login-form p {
 text-align: center;
@@ -2150,19 +2150,18 @@ font-weight: 700;
 }
 /*-- Register ---*/
 .Signup-section {
-background: url(../images/story-bg.png)no-repeat;
 background-size: cover;
 -webkit-background-size: cover;
 -o-background-size: cover;
 -moz-background-size: cover;
-min-height: 603px;
 }
 .register{
+    margin-left: 200px;
 	padding:2em 0;
 	font-family: 'Arimo Sans', sans-serif;
 }
 .register-top-grid h3, .register-bottom-grid h3 {
-	color:#bd9260;
+	color:#020202;
 	font-size: 1.2em;
 	padding-bottom: 5px;
 	margin: 0;
@@ -2173,20 +2172,24 @@ min-height: 603px;
 	margin: 10px 0;
 }
 .register-top-grid span, .register-bottom-grid span {
-	color:#fff;
+	color:#020202;
 	font-size: 0.9em;
 	padding-bottom: 0.2em;
 	display: block;
 	text-transform: uppercase;
 }
 .register-top-grid input[type="text"], .register-bottom-grid input[type="password"]{
-	border: 1px solid #fff;
-	outline-color:#bd9260;
+	border: 2px solid #54A0C9;
+	outline-color: #DA515B;
 	width: 96%;
 	font-size: 1em;
 	padding: 0.8em;
 	font-family: 'Arimo Sans', sans-serif;
-	color: #999;
+	color: #020202;
+}
+.register-top-grid input[type="text"]:focus, .register-bottom-grid input[type="password"]:focus{
+	border: 2px solid #DA515B;
+	
 }
 .donate-top span {
 color: #999;
@@ -2219,8 +2222,11 @@ text-align: right;
 }
 p.back a {
 font-size: 1.2em;
-color:#fff;
+color:#020202;
 text-decoration: none;
+}
+p.back a:hover {
+    color: #DA515B;
 }
 p.frist {
 text-align: right;
@@ -2284,7 +2290,7 @@ font-size: 1.2em;
 .register-but{
 	margin-top:1em;
 }
-.register-but form input[type="submit"] {
+.register-but input[type="submit"] {
 	background:none;
 	color:#7CC4E8;
 	font-size:1em;
@@ -2299,11 +2305,12 @@ font-size: 1.2em;
 	outline:none;
 }
 .register-but input[type="submit"]:hover {
-	background:#bd9260;
-	border:2px solid#bd9260;
+	background:#DA515B;
+    color: #fff;
+	border:2px solid#DA515B;
 }
 div.register-bottom-grid {
-	margin-top:3em;
+/*	margin-top:3em;*/
 }
 /*---------*/
 .contact {
@@ -2804,8 +2811,8 @@ a.slide-btn{
 	width: 26%;
 	}
 	.register-top-grid input[type="text"], .register-bottom-grid input[type="password"] {
-		border: 1px solid #fff;
-		outline-color: #bd9260;
+		border: 2px solid #6DC2E6;
+		outline-color: #DA515B;
 		width: 96%;
 		font-size: 1em;
 		padding: 0.4em;
@@ -2996,7 +3003,7 @@ a.slide-btn{
 	right: -1px;
 	top: -13px;
 	}
-	.register-but form input[type="submit"] {
+	.register-but input[type="submit"] {
 	font-size: 1em;
 	padding: 0.6em 2.5em;
 	}
@@ -3140,7 +3147,7 @@ a.slide-btn{
 	outline: none;
 	height: 113px;
 	}
-	.comments-area form input[type="submit"] {
+	.comments-area input[type="submit"] {
 		padding: 12px 66px;
 		color: #fff;
 		background: #333;
@@ -3396,7 +3403,7 @@ a.slide-btn{
 	width: 100%;
 	}
 	.register-top-grid span, .register-bottom-grid span {
-	color: #fff;
+	color: #020202;
 	font-size: 0.7em;
 	}
 	.donate-top h3 {
@@ -3422,7 +3429,7 @@ a.slide-btn{
 	float: none;
 	margin: 2px 0;
 	}
-	.register-but form input[type="submit"] {
+	.register-but input[type="submit"] {
 	font-size: 0.9em;
 	padding: 0.6em 2em;
 	}
@@ -3439,7 +3446,7 @@ a.slide-btn{
 
 .sb-sign {
     position: relative;
-    padding: 5px 10px;
+    padding: 0.8em 15px;
     margin-right: 10px;
     text-align: center;
     padding-top: 6px;
@@ -3448,8 +3455,15 @@ a.slide-btn{
     cursor: pointer;
 	height: 45px;
 	float: right;
-    border: 3px solid #DA515B;
+    color: #54A0C9;
+    border: 2px solid #54A0C9;
     text-decoration: none;
+}
+.sb-sign:hover{
+    color: #fff;
+    border: 2px solid #DA515B;
+    -webkit-transition: 0.5s all;
+    background-color: #DA515B;
 }
 
 .sign-box {

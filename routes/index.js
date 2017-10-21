@@ -29,7 +29,7 @@ module.exports = function(app) {
   });
 
  router.get('/register', function(req, res) {
-    res.render('signup.html', {});
+    res.render('register.html', {});
   });
 
   app.use('/', router);
