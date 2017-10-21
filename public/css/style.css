@@ -2190,6 +2190,10 @@ background-size: cover;
 	font-family: 'Arimo Sans', sans-serif;
 	color: #020202;
 }
+.register-top-grid input[type="text"]:focus, .register-bottom-grid input[type="password"]:focus{
+	border: 2px solid #DA515B;
+	
+}
 .donate-top span {
 color: #999;
 font-size:1em;
