@@ -87,13 +87,14 @@
 
                 </script>
                 <!-- //search-scripts -->
-                {% if user %}
-                <a href="/users/logout"><div id="sb-sign" class="sb-sign">
-                   Выйти
-                    </div></a>
-                {% else %}
+
                 <div class="sign-box">
-                    <a href="/register"><div id="sb-sign" class="sb-sign">
+                  {% if user %}
+                  <a href="/users/logout"><div id="sb-sign" class="sb-sign">
+                     Выйти
+                      </div></a>
+                  {% else %}
+                    <a href="users/register"><div id="sb-sign" class="sb-sign">
                        Регистрация
                         </div></a>
                         <a href="/users/auth"><div id="sb-sign" class="sb-sign">
