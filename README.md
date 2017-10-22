@@ -32,5 +32,5 @@ node_modules/sequelize/lib/sequelize db:migrate --url="mysql://{user}:{password}
 ```
 Запускаем проект
 ```
-DB="{db}" USER="{DATABASE_USER}" PASS="{DATABASE_PASSWORD}"
+DB="{db}" USER="{DATABASE_USER}" PASS="{DATABASE_PASSWORD} npm start"
 ```
