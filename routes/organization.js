@@ -13,8 +13,18 @@ module.exports = function(app) {
       res.render('companies.html', {organizations: organizations});
     });
   });
-  router.get('/:id/needlist', filters.authRequired(), function(req, res) {
 
+  router.get('/needlist', filters.authRequired(), function(req, res) {
+    db.Need.findAll({
+      include: [{
+        model: db.OrganizationNeed,
+        where: {
+          organization_id: req.user.Organizations[0].id
+        }
+      }]
+    }).then(function(needs) {
+      res.render('publications.html', {needs: needs});
+    })
   });
 
   router.get('/form', filters.authRequired(), function(req, res) {

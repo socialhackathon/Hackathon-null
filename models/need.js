@@ -46,6 +46,10 @@ module.exports = function(sequelize, DataTypes) {
       type: DataTypes.TEXT,
       defaultValue: 0
     },
+    attachment : {
+      type: DataTypes.STRING,
+      allowNull: true
+    },
     city_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
